@@ -1,47 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- add remix icon link at 4:55 in the vid -->
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="stylesheet" href="style.css">
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>CarLease</title>
-</head>
-<body>
-   <header>
-    <nav>
+  </head>
+  <body>
+    <header>
+      <nav>
         <div class="nav_header">
-            <div class="nav_logo">
-                <a href="#">RentalX</a>
-            </div>
-            <div class="nav_menu_btn" id="menu-btn">
-                <i class="ri-menu-line"></i>
-            </div>
+          <div class="nav_logo">
+            <a href="#">RentalX</a>
+          </div>
+          <div class="nav_menu_btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
         <ul class="nav_links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#rent">Rent</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#ride">Ride</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="nav_links_btn">
-                <button class="btn">Sign Up</button>
-            </li>
-            <li class="nav_links_btn">
-                <button class="btn">Sign In</button>
-            </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rent">Rent</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#ride">Ride</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav_links_btn">
+            <button class="btn">Sign Up</button>
+          </li>
+          <li class="nav_links_btn">
+            <button class="btn">Sign In</button>
+          </li>
         </ul>
         <div class="nav_btns">
-            <button class="btn btn_primary">Sign Up</button>
-            <button class="btn btn_secondary">Sign In</button>
+          <button class="btn btn_primary">Sign Up</button>
+          <button class="btn btn_secondary">Sign In</button>
         </div>
-    </nav>
-   </header> 
-   
-   <script src="script.js"></script>
-</body>
+      </nav>
+      <div class="section_container header_container" id="home">
+        <div class="header_image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+        <div class="header_content">
+          <h1>Looking to save more on your rental car?</h1>
+          <p>
+            Discover RentalX car rental application in Kenya with a car select
+            from a range of car options and local specials
+          </p>
+          <div class="header_links">
+            <a href="#"><img src="assets/store.jpg" alt="app store" /> </a>
+            <a href="#"><img src="assets/play.png" alt="playstore" /> </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section_container steps_container" id="rent">
+      <p class="section_subheader">HOW IT WORKS</p>
+      <h2 class="section_header">Rent a car using 3 steps</h2>
+      <div class="steps_grid">
+        <div class="steps_card">
+          <span><i class="ri-map-pin-fill"></i></span>
+          <h4>choose a location</h4>
+          <p>
+            Select your desired rental location from our extensive network of
+            car rental spots.
+          </p>
+        </div>
+        <div class="steps_card">
+            <span><i class="ri-calendar-check-fill"></i></span>
+            <h4>Pick-up date</h4>
+            <p>
+                Specify the date and time you wish to pick up your car with flexible scheduling options.
+            </p>
+          </div>
+          <div class="steps_card">
+            <span><i class="ri-bookmark-3-fill"></i></span>
+            <h4>Book your car</h4>
+            <p>
+                Browse through our wide range of vehicles and choose the one that best suits your needs.
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
