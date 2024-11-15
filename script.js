@@ -58,3 +58,8 @@ ScrollReveal().reveal(".steps_card", {
     delay: 1500,
     interval: 500,
   });
+
+  ScrollReveal().reveal(".experience_card", {
+    duration:1000,
+   interval: 500,
+  });
