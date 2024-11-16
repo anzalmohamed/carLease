@@ -1,13 +1,15 @@
 /* import mulish font from fonts.google .com */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 :root {
-  --primary-color: #fe5b3e;
-  --text-dark: #0f172a;
+  /* --primary-color: #fe5b3e; */
+  --primary-color:#044e07;
+  /* --text-dark: #0f172a; */
+  --text-dark: #8b4513; 
   --text-light: #475569;
   --extra-light: #f2f2f2;
   --white: #ffffff;
   --max-width: 1200px;
-  --gradient: linear-gradient(to bottom, #fe5c3c, #fc8023);
+  --gradient: linear-gradient(to bottom, #053b08, #72a81b);
 }
 * {
   padding: 0;
@@ -41,7 +43,8 @@
   border: none;
   font-size: 1rem;
   color: var(--white);
-  background-color: #474fa0;
+  /* background-color: #474fa0; */
+  background-color: #8b4513;
   white-space: nowrap;
   border-radius: 4px;
   transition: 0.3s;
@@ -49,7 +52,7 @@
 }
 
 .btn:hover {
-  background-color: #3c4286;
+  background-color: #0e8027;
 }
 
 img {
@@ -413,10 +416,83 @@ nav {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   }
 
+.footer_container{
+  display: grid;
+  gap: 4rem 2rem;
+  border-bottom: 1px solid var(--text-light);
+}
+
+.footer_col h4{
+margin-bottom: 2rem;
+font-size: 1.25rem;
+font-weight: 700;
+color: var(--text-dark);
+}
+
+.footer_links{
+  display: grid;
+  gap: 1rem;
+}
+
+.footer_links a{
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.footer_links a:hover{
+  color: var(--primary-color);
+}
+
+.footer_bar{
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer_bar h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.footer_bar p{
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.footer_socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer_socials a{
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer_socials a:hover{
+  color: var(--white);
+  background: var(--gradient);
+  }
+
 
 @media (width > 540px) {
     .steps_grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_container{
+      grid-template-columns: repeat(2, 1fr);
     }
     }
 
@@ -555,5 +631,21 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+}
+
+.footer_container{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer_bar{
+  flex-direction: row;
+}
+
+.footer_bar :is(h4, .footer_socials){
+  flex: 1;
+}
+
+.footer_socials{
+  justify-content: flex-end;
 }
 }
