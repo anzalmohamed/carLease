@@ -63,3 +63,20 @@ ScrollReveal().reveal(".steps_card", {
     duration:1000,
    interval: 500,
   });
+
+  ScrollReveal().reveal(".download_image img", {
+    ...scrollRevealOption,
+    origin: "right",
+  });
+  ScrollReveal().reveal(".download_content .section_header", {
+    ...scrollRevealOption,
+    delay: 500,
+  });
+  ScrollReveal().reveal(".download_content p", {
+    ...scrollRevealOption,
+    delay: 1000,
+  });
+  ScrollReveal().reveal(".download_links", {
+    ...scrollRevealOption,
+    delay: 1500,
+  });
